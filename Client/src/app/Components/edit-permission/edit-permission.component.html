@@ -1,0 +1,69 @@
+<app-navbar></app-navbar>
+
+
+<div class="container" margin-left="300px" >
+
+    <div class="col-xl-10 col-lg-9 col-md-8 p-0 ml-auto">
+
+        <div class="row">
+
+            <div class="col-md-12 m-5 mx-auto">
+                
+                <table class="table bg-light  table-hover mt-4">
+
+                    <thead class="thead-light">
+
+                        <tr class="text-muted">
+
+                            <th >Add Permissions List</th>
+                            
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let per of pNames"> 
+                            <td>{{per.pName}}</td>
+                            <td><a (click)="addPermission(per.pName)"><i class="fas fa-plus-circle"></i></a></td>
+                           
+                        </tr>            
+                     </tbody>  
+                 </table>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="container" margin-left="300px">
+
+    <div class="col-xl-10 col-lg-9 col-md-8 p-0 ml-auto">
+
+        <div class="row">
+
+            <div class="col-md-12 m-5 mx-auto">
+                
+                <table class="table bg-light  table-hover mt-4">
+
+                    <thead class="thead-light">
+
+                        <tr class="text-muted">
+
+                            <th>Edit Permission List</th>
+                            
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let p of viewPermissions"> 
+                            <td>{{p.pName}}</td>
+                            <td><a (click)="removePermission(p._id)"><i class="fas fa-trash-alt"></i></a></td>
+                           
+                        </tr>            
+                     </tbody>  
+                 </table>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+

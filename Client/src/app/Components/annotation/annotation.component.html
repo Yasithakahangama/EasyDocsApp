@@ -1,0 +1,16 @@
+
+
+<div class="page" >
+    <div class="header">Annotations</div>
+    <input 
+        (change)="onFileSelected()"
+        type="file"
+        id="file"
+        accept=".pdf"
+    />
+    <div #viewer class="viewer" ></div>
+
+
+    <button type="button" class="btn btn-outline-primary"  (click)="Save()" > Save To MY_Docs</button>
+
+</div>

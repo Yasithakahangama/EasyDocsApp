@@ -1,0 +1,57 @@
+.dynamicForm{
+    max-width: 30vw;
+    margin-top: 10%;
+    
+    margin-left: 300px;
+    border: 2px solid darkslategray;
+    padding: 100px;
+    background-color: rgba(22, 55, 243, 0.6);
+    border-radius: 10%;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: honeydew;
+    position: relative;
+}
+.surveyForm{
+    position: absolute;
+    top:150px;
+    right: 200px;
+    width: 30vw;
+    border: 2px solid darkslategray;
+    background-color:transparent;
+    border-radius: 10%;
+    height:max-content;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color:rgb(46, 12, 240);
+    
+}
+.lds-dual-ring {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    bottom: 80px;
+    right:250px;
+    z-index: 10;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

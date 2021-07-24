@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+<form class="dynamicForm" [formGroup]="dynamicForm" (ngSubmit)="onAddInputElement()">
+    <div *ngIf="dynamicInputs.length<1" class="form-group">
+        <label for="categoryname">Enter Category Name</label>
+        <input type="text" class="form-control" placeholder="Category name here" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Enter Form Parameter</label>
+        <input class="form-control" type="text" placeholder="enter form parameter" formControlName="fparameter"/>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Select parameter type</label>
+        <select class="form-control" id="exampleFormControlSelect1" formControlName="type">
+        <option selected>select type of input</option>
+        <option *ngFor="let type of inputTypes">{{type}}</option>
+        </select>
+    </div>
+
+    <div formArrayName="options" *ngIf="this.dynamicForm.get('type').value=== 'radio' || this.dynamicForm.get('type').value==='checkbox' || this.dynamicForm.get('type').value==='select'">
+        <a style="cursor: pointer;" (click)="onAddOption()"><i class="fas fa-plus-circle"></i></a>
+        <div *ngFor="let controls of dynamicForm.get('options')['controls']; let i =index">
+            <label for="option{{i}}">Option{{i+1}}</label>
+            <span style="display: flex;">
+                <input type="text" placeholder="enter option" [formControlName]="i"/>
+                <a style="cursor: pointer;" (click)="onDeleteOption(i)"><i class="fas fa-trash"></i></a>
+            </span>
+        </div>
+    </div>
+    
+    <button class="btn btn-primary" type="submit">Add</button>
+    <div *ngIf="addingInputElement" class="1ds-dual-ring"></div>
+</form>
+
+<form class="surveyForm" #surveyForm="ngForm" (ngSubmit)="onSubmitSurveyForm(surveyForm)">
+    <div *ngFor="let input of dynamicInputs; let i=index">
+        <div *ngIf="input.type==='paragraph'" class="form-group">
+            <label for="paragraph{{i}}">{{input.label}}</label>
+            <input class="form-control" type="text" placeholder="enter details" name="fparameter{{i}}" ngModel required #paragraph="ngModel" disabled/> 
+        </div>
+        <div class="form-group form-check" *ngIf="input.type==='date'">
+            <label for="DateParameter">{{input.label}}</label>
+            <input type="date" class="form-control" id="DateParameter" ngModel disabled/>
+        </div>
+        <div *ngIf="input.type==='radio'">
+            <label for="radioButtonParameter">{{input.label}}</label>
+            <div *ngFor="let option of input.options;let z =index">
+                <div class="radio">
+                    <label for="radioButtonOption{{ z }}">
+                        <input type="radio" name="optradio" id="radioButtonOption{{z}}" disabled/>
+                        {{option}}
+                    </label>
+                </div>
+            </div> 
+        </div>
+        <div *ngIf="input.type==='select'">
+            <label for="selectInputParameter">{{input.label}}</label>
+            <select class="form-control" id="exampleFormControlSelect" name="SelectParameter" disabled>
+                <option selected>select type of input</option>
+                <option *ngFor="let option of input.options" value="{{option}}">{{option}}</option>
+            </select>
+        </div>
+    </div>
+
+    <ng-template [ngIf]="dynamicInputs.length>0">
+        <button type="submit" class="btn btn-primary" >Add this Category</button>
+    </ng-template>
+</form>

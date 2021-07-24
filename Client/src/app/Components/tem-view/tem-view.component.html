@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+
+<form>
+<div style=" position: relative;  left: 0px; top: 50px; height: 600px; width:700px; border-style: solid;" class="container">
+    
+    <div *ngFor="let input of formParameter; let i = index"  >
+
+
+  <input type="text"  placeholder={{input.formParaName}} [ngStyle]="setMyStyles(i)" >
+      
+  
+</div>
+  
+
+</div>
+  
+
+<button type="submit" class="btn btn-primary" style="margin-left: 1200px;" (click)="back()">back</button>
+</form>

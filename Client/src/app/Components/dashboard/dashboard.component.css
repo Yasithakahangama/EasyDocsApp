@@ -1,0 +1,120 @@
+
+
+#main{
+    font-family: 'Poppins', sans-serif;
+    color: #0a0101;
+    background-color: rgba(222, 226, 230, 1);
+    height: 100vh;
+}
+/* nav bar styles*/
+
+/*sidenav*/
+.sidebar {
+    height: 100vh;
+    background-color: #1c2a48;
+    background-size: cover;
+    
+}
+
+.bottom-border{
+    border-bottom: 2px groove rgba(222, 226, 230, 1);
+}
+.navbar-brand{
+    color:  #18B5F9;
+    font-weight: bold;
+}
+.sidebar img{
+    width:90px ;
+    height:90px;
+}
+
+.sidebar-link{
+    transition: all .4s;
+    font-size: large;
+    border-bottom:1px solid white ;
+}
+
+.sidebar-link:hover{
+   
+    background-color: black;
+    border:2px solid #18B5F9 ;
+    font-weight:bold;
+   
+}
+.sidebar-link:active{
+    color: #18B5F9;
+    background-color: black;
+    border:2px solid red ;
+    font-weight:bold;
+   
+}
+
+
+/*end of sidenav*/
+
+/*topnav*/
+.top-bar {
+    box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.25);
+}
+
+.top-bar img{
+    height: 40px;
+    width: 120px;
+}
+
+#top-icon{
+    color:  rgba(13, 37, 62, 0.85);;
+}
+#top-icon:hover{
+    color: #18B5F9
+}
+
+@media( max-width: 768px){
+    .sidebar{
+        position: static;
+        height: auto;
+    }
+    .top-bar{
+        position: static;
+    }
+}
+/* end of nav bar styles */
+content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+}
+.content .textbox h2{
+    color: rgb(241, 228, 228);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    padding-left: 50px;
+    align-items: center;
+    padding-left: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.carousel-item{
+    height: 97vh;
+}
+.carousel-caption{
+    padding-left: 170px;
+    padding-bottom: 270px;
+}
+.carousel-caption h3{
+    font-size: 75px;
+    /* text-transform: uppercase; */
+    color: rgb(105, 9, 9);
+}
+.carousel-caption h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(245, 239, 239);
+ 
+}

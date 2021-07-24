@@ -1,0 +1,91 @@
+<app-navbar></app-navbar>
+
+<div class="container" margin-left="300px">
+    <div class="col-xl-10 col-lg-9 col-md-8 p-0 ml-auto">
+        <div class="row">
+            <div class="col-md-8 m-5 mx-auto">
+
+                <div class="jumbotron mt-4">
+        
+                    <div class="col sm-4 mx-auto">
+                        <h1 class="text-center">PROFILE</h1>
+                        <br>
+                    </div>
+                    
+                    <table class="table col md-4 mx-auto">
+                        <tr>
+                            <td class="head">First Name</td>
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                            <td >{{details.firstName}}</td> 
+                        </tr>
+                        <tr>
+                            <td class="head">Last Name</td>
+                         
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>{{details.lastName}}</td>
+                        </tr>
+                        <tr>
+                            <td class="head">Email</td>
+                           
+                            
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            
+                            
+                            <td>{{details.email}}</td>
+                        </tr>
+                   
+                        
+                        <tr>
+                           
+                        
+
+                            <td><button [routerLink]="['/editProfile']" class="btn btn-outline-primary">Edit Profile</button></td>
+
+                           
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                    
+                            <td></td>
+                            
+                            
+
+                            <td><button (click)="goEdit()" class="btn btn-outline-primary">Edit Login Details</button></td>
+                        </tr>
+                        
+                    </table>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
+
+<!-- <div class="container">
+    
+    
+</div> -->

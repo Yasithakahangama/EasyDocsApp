@@ -1,0 +1,17 @@
+
+  <app-navbar></app-navbar>
+
+  <div class="container">
+
+<header class="sub-header">
+    <nav>
+      <ul class="nav-link">
+        <li><a [routerLink]="['/viewCategories',slug,'view','formView']">Form</a></li>
+        <li><a [routerLink]="['/viewCategories',slug,'view','TemGenerate','Tem']">View Tem</a></li>
+        <li><a [routerLink]="['/viewCategories',slug,'view','TemGenerate']">+Template</a></li>
+        <li ><a [routerLink]="['/PaymentDetails',slug]">Payment Details</a></li>
+      </ul>
+    </nav>
+  </header>
+  <router-outlet></router-outlet>
+</div>

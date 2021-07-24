@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+   
+   
+
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  
+            <div class="carousel-inner" role="list">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <br>
+                  <br>
+               
+                     <div class="container" >
+                         
+                           
+                      <h3><b>Category List</b></h3><br>
+                    
+                             <ng-template ngFor let-category [ngForOf]="categories" >
+                                 <a href="#" class="btn btn-info btn-lg" [routerLink]="[category.slug,'view','TemGenerate']">
+                                      {{category.name}}
+                                   </a>
+                                   <a (click)="deleteAds(category._id)"><i class="fas fa-trash-alt"></i></a>
+                                   <br>
+                                   <br>
+                               </ng-template>
+                           
+                      
+                           
+                         
+                       </div>
+          
+                </div>
+                <img class="d-block w-100" src="../../../assets/image//photo6140691189393894237.jpg" alt="First slide">
+          
+              </div>
+            </div>
+          </div>

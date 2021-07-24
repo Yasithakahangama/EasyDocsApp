@@ -1,0 +1,41 @@
+<app-navbar></app-navbar>
+
+
+
+
+
+
+    <h1 class="font-weight-bold" class="text-warning" style="margin-left: 500px;margin-top: 50px;">Insert document to Database <span class="badge badge-secondary"></span></h1>
+    <hr class="font-weight-bold"  />
+
+  <br>
+    <form [formGroup]="form"  (submit)="onSubmit()" class="contanair" >
+
+      <div>
+        <label class="font-weight-bold">Insert document name</label>
+        <br>
+        <br>
+        <input formControlName="name" type="text" placeholder="Enter name..." />
+      </div>
+      <div>
+        <br>
+        <label class="font-weight-bold">Select document</label>
+        <br>
+        <br>
+        <input (change)="onFileSelect($event)" type="file"/>
+      </div>
+    
+      <div>
+        <br>
+        <label class="font-weight-bold">Upload the document </label>
+        <br>
+        <br>
+        <button type="submit" class="btn btn-success" >Upload document</button>
+      </div>
+    </form>
+
+  
+
+
+
+

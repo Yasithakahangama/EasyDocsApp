@@ -1,0 +1,16 @@
+
+<app-navbar></app-navbar>
+<h3 style="color: rgb(13, 7, 68);padding-left: 400PX;margin-top: 60PX; "><b>My Documents</b></h3>
+<div class="body">
+<div *ngFor="let input of mydocument ">
+    <br>
+
+    <!-- <button class="btn btn-primary" src="input.documentPath">{{input.name}} </button> -->
+   <a [href]="input.documentPath" >{{input.name}}</a><br>
+   <a (click)="deleteAds(input._id)"><i class="fas fa-trash-alt"></i></a>
+   
+   <!-- <button type="button" class="btn btn-outline-primary"  style="margin-left: 200px;" >Go to annotate </button> -->
+
+
+</div>
+</div>

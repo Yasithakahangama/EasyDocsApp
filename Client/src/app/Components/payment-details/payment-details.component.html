@@ -1,0 +1,52 @@
+<app-navbar ></app-navbar>
+
+
+
+<div class="container" margin-left="300px">
+    <div class="col-xl-10 col-lg-9 col-md-8 p-0 ml-auto">
+
+        <div class="row">
+
+            <div class="col-md-12 m-5 mx-auto">
+
+                <table class="table bg-light  table-hover mt-4" >
+
+                    <thead class="thead-light">
+
+                        <tr class="text-muted">
+                            <th>Name</th>
+                            <th>User Email</th>
+                       
+                            <!-- <th>User Status</th>
+                            <th>User Edit</th>
+                            <th>User Delete</th> -->
+                           
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let s of paymentDetails "> 
+                            <td>{{s.Uname}}</td>
+                            <td>{{s.Uemail}}</td>
+                           
+                            
+                        
+                        </tr>
+                        
+                       
+        
+                    </tbody>
+                     
+                        
+                  
+                 
+                </table>
+                <button type="submit" class="btn btn-primary" style="margin-left: 300px;" (click)="back()">back</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+

@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<br>
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  
+   <div class="carousel-inner" role="list">
+     <div class="carousel-item active">
+       <div class="carousel-caption">
+         <div class="container">
+            <h3 style="margin-top: 30PX; "><b>Category List</b></h3>
+          
+            <br>
+            <div contenteditable class="board">
+               If this is your first time , you have to
+                  buy for each category is selected
+            </div><br>
+            <ng-template ngFor let-category [ngForOf]="categories">
+               <!-- <a href="#" class="btn btn-info btn-lg" [routerLink]="[category.slug,'view','ClintFillForm']"> -->
+               <a class="btn btn-info btn-lg" (click)="checkPaymentDetails(category.slug)">
+                  {{category.name}}
+               </a>
+               <br>
+               <br>
+            </ng-template>
+         
+         </div> 
+      
+      
+       </div>
+       <img class="d-block w-100" src="../../../assets/image/photo6140691189393894237.jpg" alt="First slide">
+ 
+     </div>
+   </div>
+ </div>
+▲

@@ -1,0 +1,65 @@
+<app-navbar ></app-navbar>
+
+
+
+<div class="container" margin-left="300px">
+    <div class="col-xl-10 col-lg-9 col-md-8 p-0 ml-auto">
+
+        <div class="row">
+
+            <div class="col-md-12 m-5 mx-auto">
+                <h1>Admin List</h1>
+                <table class="table bg-light  table-hover mt-4" >
+
+                    <thead class="thead-light">
+
+                        <tr class="text-muted">
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <!-- <th>User Status</th>
+                            <th>User Edit</th>
+                            <th>User Delete</th> -->
+                           
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr *ngFor="let s of dataarr"> 
+                            <td>{{s.firstName}}</td>
+                            <td>{{s.lastName}}</td>
+                            <td>{{s.email}}</td>
+                            <td><a (click)="editPer(s._id)"><i class="fas fa-edit"></i></a></td>
+                            <td><a (click)="deleteAdmin(s._id)"><i class="fas fa-trash-alt"></i></a></td>
+                        
+                        </tr>
+                        
+                       
+        
+                    </tbody>
+                     
+                        
+                  
+                 
+                </table>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <!-- <ng-template #elseBlock>
+        <td *ngIf="this.auth.getStatus(s); else elseBlock"><i class="fas fa-toggle-on fa-lg"></i></td>
+                             <td><i class="fas fa-toggle-off fa-lg"></i></td>   
+                            </ng-template> -->
+                            <!-- <td><button (click)="onselectIDforEdit(s)"  class="p-0"><i class="fas fa-edit fa-lg text-dark "></i></button></td> -->
+                            <!-- <td><button (click)="onselectIDforDelete(s)"  class="p-0"><i class="fas fa-trash fa-lg text-dark"></i></button></td> -->
+
+
+ 

@@ -1,0 +1,118 @@
+<!-- <app-navbar></app-navbar> -->
+<!-- <form >
+    <div  style=" position: relative;  left: 0px; top: 0px; height: 800px; width:700px; background-color:rgb(233, 248, 180)" class="container" class="container">
+    
+      <div *ngFor="let input of dataArr; let i = index">
+    
+  
+ 
+<label class="Resize"  [ngStyle]="setMyStyles(i)" >   {{input.res[input.res.length-1].response}}   </label>
+
+  
+  
+            
+       
+          
+         
+         
+   <input type="text" placeholder={{input.res[input.res.length-1].response}}  [ngStyle]="setMyStyles(i)" >  
+    
+  </div>
+    
+  
+  </div>
+    
+  <button type="submit" class="btn btn-primary" style="margin-left: 350px;" (click)="Create()">Create Document</button>
+  </form>
+   -->
+<!-- 
+<form >
+    <div  style=" position: relative;  left: 0px; top: 0px; height: 800px; width:700px; background-color:rgb(233, 248, 180)" class="container" class="container">
+    
+      <div *ngFor="let input of dataArr; let i = index">
+    
+  
+ 
+<label class="Resize"  [ngStyle]="setMyStyles(i)" >   {{input.res[input.res.length-1].response}}   </label>
+
+  
+  
+            
+       
+          
+         
+         
+
+    
+  </div>
+    
+  
+  </div>
+    
+  <button type="submit" class="btn btn-primary" style="margin-left: 350px;" (click)="Create()">Create Document</button>
+  </form>
+   -->
+   <!-- <h3 style="color: rgb(28, 8, 214);padding-left: 350PX;margin-top: 60PX; "><b>Template List</b></h3>
+
+  <form   >
+    
+    
+    <div *ngFor="let input of template let i = index"  >
+      <br>
+
+<button type="submit" class="btn btn-primary" (click)="ViewTem(input._id)" style="margin-top: 100px;margin-left: 350px;" >View Template {{i+1}} </button>
+     
+ 
+</div>
+  
+
+
+  
+
+
+</form> -->
+
+
+
+
+<app-navbar></app-navbar>
+   
+   
+
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+  <div class="carousel-inner" role="list">
+    <div class="carousel-item active">
+      <div class="carousel-caption">
+        <br>
+        <br>
+     
+           <div class="container" >
+               
+                 
+            <h3><b>Template List</b></h3><br>
+          
+
+            <div *ngFor="let input of template let i = index"  >
+              <br>
+        
+        <button type="submit" class="btn btn-primary" (click)="ViewTem(input._id)"  >View Template {{i+1}} </button>
+             
+         
+        </div>
+          
+                 
+            
+                 
+               
+             </div>
+
+      </div>
+      <img class="d-block w-100" src="../../../assets/image//photo6140691189393894237.jpg" alt="First slide">
+
+    </div>
+  </div>
+</div>
+
+
+

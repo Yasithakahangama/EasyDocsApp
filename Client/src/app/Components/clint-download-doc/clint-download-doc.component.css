@@ -1,0 +1,37 @@
+div.card{
+    margin: auto;
+   
+    width: 50rem;
+    height: 35rem;
+}
+form{
+    margin-top: 50rem;
+    margin: auto;
+}
+
+h3.title{
+    color: white;
+    margin-left:350px;
+}
+body{
+    background-color:black;
+}
+
+.container{
+
+    margin-left: 350px;
+    margin-top:100px ;
+    
+    
+    }
+    .Resize{
+
+        border: 1px solid;
+        padding: auto; 
+        width: auto;
+        resize: both;
+        overflow: auto;
+    
+    
+    
+    }

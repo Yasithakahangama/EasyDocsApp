@@ -1,0 +1,51 @@
+.card{
+    font-size: 1.3rem;
+}
+.card-body{
+    height:100px ;
+}
+
+.carousel-caption{
+    padding-bottom: 270px;
+}
+.carousel-caption h3{
+    font-size: 35px;
+    color: rgb(105, 9, 9);
+}
+.carousel-caption h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    color: rgb(245, 239, 239);
+ 
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textbox{
+    position: relative;
+}
+.content .textbox h2{
+    color: rgb(241, 228, 228);
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+    padding-left: 50px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.carousel-item{
+    height: 97vh;
+}
+.fa-trash-alt{
+
+    color: rgb(20, 13, 13);
+   margin-left: 10px;
+
+}
+
+

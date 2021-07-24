@@ -1,0 +1,56 @@
+.card{
+    font-size: 1.3rem;
+}
+.card-body{
+    height:100px ;
+}
+.card-column{
+    margin-left: 100%;
+    margin-right: 10px;
+}
+
+.board {
+  font-family: "Dosis";
+  font-size: 2.2rem;
+  letter-spacing: .15em;
+  line-height: 1.5;
+  text-shadow: 1px 1px #666, 3px 3px #000;
+  width: 850px;
+  height: 150px;
+  padding: 20px;
+  overflow: hidden;
+  color: #fff;
+  background: linear-gradient(to bottom, rgb(17, 7, 73),rgb(0,0,205));
+  
+}
+h3{
+    font-size: 40px;
+    color: rgb(9, 5, 65);
+}
+
+
+.btn-lg{
+    background-color: rgb(135,206,235);
+    color: white;
+    width: 400px;
+    border-radius: 9px;
+}
+.carousel-caption{
+    padding-left: 170px;
+    padding-bottom: 227px;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.fa-trash-alt{
+
+    color: rgb(20, 13, 13);
+   margin-left: 10px;
+
+}
+
